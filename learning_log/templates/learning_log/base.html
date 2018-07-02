@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html">
     <meta name="viewport" content="width=device=width,initial-scale=1">
     
     <title>Learning log</title>
@@ -21,21 +21,21 @@
                aria-expanded="false" aria-controls="navbar">
             </button>
             <a class="navbar-brand" href="{% url 'learning_log:index' %}">
-              Learning Log</a>
+              学习日记</a>
           </div>
           
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="{% url 'learning_log:topics' %}">Topic</a></li>
+              <li><a href="{% url 'learning_log:topics' %}">主题</a></li>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
               {% if user.is_authenticated %}
                 <li><a>Hello,{{ urser.usernamr }}.</a></li>
-                <li><a href="{% url 'users:logout' %}">log out</a></li>
+                <li><a href="{% url 'users:logout' %}">登出</a></li>
               {% else %}
-                <li><a href="{% url 'users:register' %}">register</a></li>
-                <li><a href="{% url 'users:login' %}">log in</a></li>
+                <li><a href="{% url 'users:register' %}">注册</a></li>
+                <li><a href="{% url 'users:login' %}">登录</a></li>
               {% endif %}
             </ul>
           </div><!--/.nav-collapse -->
