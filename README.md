@@ -1,3 +1,1 @@
-# mylearningblog
-
-Django-学习blog
+# Django-学习日记
