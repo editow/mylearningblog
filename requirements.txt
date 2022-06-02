@@ -19,7 +19,7 @@ django-bootstrap3==10.0.1
 duplicity==0.6.23
 gunicorn==19.8.1
 gyp==0.1
-html5lib==0.999
+html5lib==0.99999999
 httplib2==0.8
 lockfile==0.8
 lxml==3.3.3
